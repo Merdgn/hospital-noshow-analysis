@@ -1,0 +1,6 @@
+appointment_id,patient_id,scheduled_timestamp,appointment_timestamp,created_channel,department,doctor_id,age,sex,neighborhood,insurance_type,sms_received_before,call_attempts_before,historical_noshow_rate_patient,past_appointments_patient,lead_time_days,recent_cancellations_patient,dow_hour,target_noshow
+A1,P1,2025-10-01 09:00:00,2025-10-03 10:00:00,Online,Cardiology,D10,34,F,Central,General,1,0,0.0,0,2,0,3_10,0
+A2,P1,2025-10-10 09:00:00,2025-10-12 10:00:00,Online,Cardiology,D10,34,F,Central,General,1,0,0.5,1,2,0,4_10,1
+A3,P2,2025-10-02 10:00:00,2025-10-05 09:00:00,CallCenter,Neurology,D22,45,M,North,Private,0,1,0.0,0,3,0,6_09,0
+A4,P3,2025-10-03 15:00:00,2025-10-04 09:00:00,Online,Dermatology,D30,29,F,East,General,1,0,0.0,0,1,0,5_09,1
+A5,P4,2025-10-04 09:00:00,2025-10-07 09:00:00,Onsite,Orthopedics,D40,55,M,West,General,1,1,0.0,0,3,0,2_09,0
