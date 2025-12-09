@@ -163,6 +163,69 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+
+st.markdown("""
+<style>
+
+/* 🔹 Uygulamanın genel arka planı */
+[data-testid="stAppViewContainer"] {
+    background: radial-gradient(circle at top left,
+                                #f7fafc 0%,
+                                #eef2f7 35%,
+                                #e3f2ff 100%);
+}
+
+/* 🔹 Üst barı şeffaf yapalım (Streamlit default header) */
+[data-testid="stHeader"] {
+    background: rgba(0,0,0,0);
+}
+
+/* 🔹 Orta bloğu biraz daraltıp ortaya alalım */
+.block-container {
+    max-width: 1050px;          /* sayfa genişliği */
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+/* 🔹 Formun olduğu kısım kart gibi dursun diye hafif gölge + köşe yuvarlama */
+section.main > div {
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 2.5rem 2.5rem 2rem;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    border: 1px solid rgba(15, 23, 42, 0.04);
+}
+
+/* 🔹 “Tahmin Et” ve “Geri / İleri” butonları biraz daha modern dursun */
+button[kind="primary"] {
+    border-radius: 999px !important;
+    font-weight: 600 !important;
+}
+
+/* 🔹 Adım göstergeleri / badge’ler varsa biraz daha belirgin dursun */
+.step-badge {
+    background: #0f766e;
+    color: white;
+    border-radius: 999px;
+    padding: 0.3rem 0.9rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* 🔹 Tahmin ve olasılık kutularını kart gibi gösteriyorsa; daha yumuşak köşe */
+.prediction-box {
+    border-radius: 14px;
+}
+
+/* Tooltip ikonların (❔) yan yana çok sıkışmaması için küçük boşluk */
+.help-icon {
+    margin-left: 0.25rem;
+    cursor: default;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
 # =========================================================
 # 🔢 Sabit seçenekler ve mapping’ler
 # =========================================================
